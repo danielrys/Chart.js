@@ -1024,9 +1024,10 @@
 			else{
 				this.activeElements = ChartElements;
 			}
-			this.draw();
 			if(this.options.customTooltips){
 				this.options.customTooltips(false);
+			} else {
+				this.draw();
 			}
 			if (ChartElements.length > 0){
 				// If we have multiple datasets, show a MultiTooltip for all of the data points at that index
